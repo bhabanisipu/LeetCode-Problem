@@ -3,7 +3,6 @@ class Solution:
         n = len(s)
         cnt = 0
         left = 0
-        r = list(set(s))
         dic = {'a':0,'b':0,'c':0}
         for right in range(n):
             dic[s[right]] += 1
