@@ -8,7 +8,10 @@ class Solution:
             for right in range(len(nums)):
                 if nums[right] not in freq or freq[nums[right]] == 0:
                     k -=1
-                freq[nums[right]] = freq.get(nums[right],0) + 1
+                if nums[right] not in freq:
+                    freq[nums[right]] = 1
+                else:
+                    freq[nums[right]] += 1
                 while k<0:
                     freq[nums[left]] -= 1
                     if freq[nums[left]] == 0:
