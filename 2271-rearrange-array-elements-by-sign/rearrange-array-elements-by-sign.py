@@ -7,8 +7,8 @@ class Solution:
                 pos.append(nums[k])
             else:
                 neg.append(nums[k])
-        nums = []
+        num = []
         for k in range(len(pos)):
-            nums.append(pos[k])
-            nums.append(neg[k])
-        return nums
+            num.append(pos[k])
+            num.append(neg[k])
+        return num
