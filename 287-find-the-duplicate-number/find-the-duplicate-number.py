@@ -5,6 +5,7 @@ class Solution:
         for i in range(len(nums)):
             if nums[i] in s:
                 r = nums[i]
+                break
             else:
                 s.add(nums[i])
         return r
