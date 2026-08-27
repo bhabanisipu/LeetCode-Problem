@@ -9,13 +9,13 @@ class Solution:
         while i<r:
             flag = False
             while j<x:
-                if s[i] == t[j]:
+                if s[i] != t[j]:
+                    j = j+1
+                else:
                     i = i+1
                     j = j+1
                     flag = True
                     break
-                else:
-                    j = j+1
             if flag == False:
                 return False
         return True
